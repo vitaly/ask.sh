@@ -1,5 +1,5 @@
 # this script directory
-ASK_LIB=$(cd "`dirname ${BASH_SOURCE[$i]}`"; pwd)
+ASK_LIB=$(cd "`dirname ${BASH_SOURCE[0]}`"; pwd)
 
 source "$ASK_LIB/colors.sh"
 source "$ASK_LIB/utils.sh"
