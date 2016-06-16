@@ -6,10 +6,24 @@
 
 To use this library just source it from your bash script and call the API functions:
 
+## Purpose
+
+This library ask user predefined questions, remember results for the next time, allow to
+conditionally expecute code blocks based on the answers.
+
+What for? Well, I wrote it to be able to conditionally generate ~/.vim configs
+with on/off features for various features.
+
+## Examples
+
+see `examples` directory for examples of usage
+
+## API
+
 ### init FILE
 
-you call `init` with path to the file that will store the results the results
-of the previous run will be loaded if the file already exists
+you call `init` with path to the file that will store the results.
+the results of the previous run will be loaded if the file already exists.
 
     init .config
 
@@ -35,8 +49,3 @@ Valid types:
 - `simple` - simple string, basicly symbols with spaces
 - `str[ing]` - any non empty string
 - `any` - anhitng
-
-
-## Examples
-
-see `examples` directory for examples of usage
